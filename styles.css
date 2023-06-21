@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url('bgnd.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+ul{
+    width: 200px;
+    text-align: center;
+}
+.sidebar{
+    flex-direction: column;
+   background-color: grey;
+    font-family: 'Fira Sans', sans-serif;
+    min-height: 100%;
+    width:200px;
+    
+}
+
+.sidebar li{
+    list-style: none;
+    font-size: 25px;
+    padding : 33px 0;
+}
+.sidebar li a{
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+.sidebar li a:hover{
+    background-color: rgb(39, 52, 52);
+    color: white;
+    width: 200px;
+    padding: 10px;
+    
+}
+.active{
+    background-color: rgb(245, 243, 239);
+    cursor: pointer;
+}
+
+.main{
+    padding-left: 6px;
+    width:90vw;
+}
+
+.container{
+    display: flex;
+    
+}
+.infoContainer{
+    
+    height: 78vh;
+    width: 80vw;
+    margin: 10vh auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+
+}
+.devInfo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family:'Oswald';
+}
+.devPic img{
+    height:78vh;
+}
+.hello{
+    font-size: 85px;
+
+}
+.name{
+    font-size: 70px;
+    font-weight: bold;
+    font-family: 'Fira Sans';
+}
+.about{
+    font-size: 40px;
+}
+.moreabout{
+    font-size: 27px;
+    font-family: sans-serif;
+}
+.buttons{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.buttons button{
+    padding: 10px;
+    border-radius: 16px;
+    background-color: cyan;
+    font-weight: bold;
+    margin: 0px 12px;
+    cursor: pointer;
+}
+.buttons button:hover{
+    background-color: white;
+    color: rgb(95, 120, 220);
+
+}
+.contactform{
+    font-family: 'Fira Sans';
+    padding: 0 34px;
+    padding-top: 100px;
+}
+.contactform h1{
+    padding-bottom: 50px;
+    font-family:'Oswald';
+    text-align: center;
+}
+.contactform form div{
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+}
+#emailHelp{
+    color: cornsilk;
+    font-size: 20px;
+}
+#form-checkbox{
+    flex-direction: row;
+}
+
+
+#me{
+    color: white;
+    font-family: 'Fira Sans';
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+h1{
+    font-size: 50px;
+    padding-bottom: 30px;
+    color: white;
+}
+.skillcontainer{
+    padding: 30px;
+}
+.Skill{
+    display: flex;
+    gap: 30px;
+    padding-bottom: 30px;
+    color: aqua;
+}
+#html{
+    width: 290px;
+    background-color: red;
+    color: white;
+    text-align: center;   
+}
+#css{
+    width: 200px;
+    background-color: purple;
+    color: white;
+    text-align: center;
+}
+#java{
+    width: 250px;
+    background-color: greenyellow;
+    color: white;
+    text-align: center;
+}
+#dsa{
+    width: 170px;
+    background-color: orange;
+    color: white;
+    text-align: center;
+}
+.form-check-label{
+    color: azure;
+}
+.footer{
+    display: flex;
+    position:fixed;
+    left:0;
+    bottom: 0;
+    min-width: 100vw;
+    background-color: white;
+    color: blue;
+    text-align: center;
+    justify-content: space-evenly;
+}
+.footer div{
+    display: flex ;
+    flex-wrap: wrap;
+}
+.fb img{
+    height: 20px;
+}
+.fb a{
+    
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+.ig img{
+    height: 20px;
+}
+.ig a{
+    
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+.li img{
+    height:20px;
+    width: 20px;
+}
+.li a{
+    
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+@media(max-width:800px ){
+    
+    .infoContainer{
+        padding-left: 35px;
+    }
+    .sidebar{
+        background-color: grey;
+        height: 100%;
+        width:100px;
+
+    }
+    .sidebar li{
+        font-size: 15px;
+        font-weight: bolder;
+    }
+    ul{
+        text-align: justify;
+        width: 100px;
+        text-align: center;
+    }
+    .active{
+        width: 100px;
+        background-color: rgb(245, 243, 239);
+        cursor: pointer;
+    }
+    .sidebar li a:hover{
+        background-color: rgb(39, 52, 52);
+        color: white;
+        width: 120px;
+        padding: 10px;
+    }
+    .hello{
+        font-size: 60px;
+    }
+    .name{
+        font-size: 50px;
+    }
+    .about{
+        font-size: 30px;
+    }
+    .moreabout{
+        font-size: 11px;
+    }
+    .buttons{
+        margin-top: 32px;
+    }
+    .buttons button{
+        padding: 10px;
+        border-radius: 16px;
+        background-color: cyan;
+        font-weight: bold;
+        margin: 0px 12px;
+        cursor: pointer;
+    }
+    .buttons button:hover{
+        background-color: white;
+        color: rgb(95, 120, 220);
+    }
+}
+@media(max-width:500px){
+    .container{
+        flex-direction: column;
+    }
+    .infoContainer{
+        padding-left: 35px;
+        flex-wrap: wrap;
+    }
+    .sidebar{
+        width: 100%;
+        height: 40px;
+        background-color: grey;
+    }
+    .sidebar ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow:hidden;
+        display: inline;
+
+    }
+    .sidebar ul li{
+        padding: 0;
+        float: left;
+        font-size: 8px;
+    }
+    .sidebar ul li a{
+        display:block;
+        text-align: center;
+        padding: 10px 10px;
+        text-decoration: none;
+    }
+
+    .active{
+        width: 100px;
+        height: 40px;
+        background-color: rgb(245, 243, 239);
+        cursor: pointer;
+        text-align: center;
+    }
+    .sidebar li a:hover{
+        background-color: rgb(39, 52, 52);
+        color: white;
+        width: 50px;
+        height: 30px;
+        padding: 10px;
+    }
+    .hello{
+        font-size: 60px;
+    }
+    .name{
+        font-size: 50px;
+    }
+    .about{
+        font-size: 30px;
+    }
+    .moreabout{
+        font-size: 11px;
+    }
+    .buttons{
+        margin-top: 32px;
+    }
+    .buttons button{
+        padding: 10px;
+        border-radius: 16px;
+        background-color: cyan;
+        font-weight: bold;
+        margin: 0px 12px;
+        cursor: pointer;
+    }
+    .buttons button:hover{
+        background-color: white;
+        color: rgb(95, 120, 220);
+    }
+    .Intro{
+        padding-left: 75px;
+    }
+}
+
